@@ -1,0 +1,54 @@
+
+.name {
+    font-family: Segoe UI;
+    font-size: 28px;
+}
+
+
+.card {
+    position:relative;
+    float: left;
+    margin-top: 50px;
+
+    margin-right: 50px;
+    word-wrap: break-word;
+    
+	height: 300px;
+}
+
+.pokeimg {
+    
+    max-width: 200px;
+}
+
+.card_name {
+    font-family: Segoe UI;
+    font-size: 18px;
+    text-align: center;
+vertical-align: middle;
+    width: 200px;
+    word-wrap: break-word;
+}
+
+.card_info {
+    font-family: Segoe UI;
+    font-size: 14px;
+    text-align: center;
+vertical-align: middle;
+    width: 200px;
+    word-wrap: break-word;
+}
+
+main {
+  background: white;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.center {
+  margin: 0 auto;
+  width: 200px;
+
+  padding: 20px;
+ 
+}

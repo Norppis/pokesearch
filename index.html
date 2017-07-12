@@ -1,0 +1,56 @@
+<html>
+
+
+<head>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <!-- JS file -->
+<script src="jquery.easy-autocomplete.min.js"></script> 
+
+<!-- CSS file -->
+<link rel="stylesheet" href="easy-autocomplete.min.css"> 
+
+<!-- Additional CSS Themes file - not required-->
+<link rel="stylesheet" href="easy-autocomplete.themes.min.css"> 
+ <link rel="stylesheet" href="styles.css">   
+</head>
+
+<body>
+<main>
+ 
+<div class="easy-autocomplete">
+<form action="pokemon.php" method="post" autocomplete="off">
+    Search:<br>  <input id="ddg" name="name"/><br />
+
+<script>
+    
+var options = {
+			url: "https://api.pokemontcg.io/v1/cards?&pageSize=1000",
+			listLocation: "cards",
+			getValue: "name",
+
+			
+                theme: "square",
+list: {
+		maxNumberOfElements: 5,
+		match: {
+			enabled: true
+		},
+        sort: {
+			enabled: true
+		},
+	}
+		};
+		$("#ddg").easyAutocomplete(options);
+    
+    
+    </script>
+    
+</form>
+</div>
+
+</main>
+    </body>
+
+
+
+</html>
